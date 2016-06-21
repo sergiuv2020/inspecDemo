@@ -15,7 +15,7 @@ describe "Alfresco daemons" do
   let(:repoConnection) { $repoConnection ||= Helpers.getFaradayConnection "http://#{ENV["TARGET_HOST"]}:8080" }
 
   it 'Has a running Alfresco Repository Failing Test' do
-    expect(repoConnection.get('/alfresco/').body).to include('Welcome to Alfresco')
+    expect(repoConnection.get('/alfresco/').body).to include('Welcome to Alfresco11')
   end
 
   it 'Has a running Alfresco Repository application' do
